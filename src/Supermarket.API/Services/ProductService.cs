@@ -29,6 +29,8 @@ namespace Supermarket.API.Services
         {
             Console.WriteLine("changes");
             Console.WriteLine("changes");
+            
+            Console.WriteLine("making some changes");
             // Here I list the query result from cache if they exist, but now the data can vary according to the category ID, page and amount of
             // items per page. I have to compose a cache to avoid returning wrong data.
             string cacheKey = GetCacheKeyForProductsQuery(query);
