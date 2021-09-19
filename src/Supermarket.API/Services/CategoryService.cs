@@ -27,6 +27,7 @@ namespace Supermarket.API.Services
         {
             Console.WriteLine("changes");
             Console.WriteLine("changes");
+            Console.WriteLine("making some changes");
             // Here I try to get the categories list from the memory cache. If there is no data in cache, the anonymous method will be
             // called, setting the cache to expire one minute ahead and returning the Task that lists the categories from the repository.
             Console.WriteLine("Changes");
