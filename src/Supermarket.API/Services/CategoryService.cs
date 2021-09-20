@@ -29,6 +29,7 @@ namespace Supermarket.API.Services
             // Here I try to get the categories list from the memory cache. If there is no data in cache, the anonymous method will be
             // called, setting the cache to expire one minute ahead and returning the Task that lists the categories from the repository.
             Console.WriteLine("Changes");
+            Console.WriteLine("fixes");
             var categories = await _cache.GetOrCreateAsync(CacheKeys.CategoriesList, (entry) => {
                 entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1);
                 return _categoryRepository.ListAsync();
